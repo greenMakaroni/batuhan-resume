@@ -1,0 +1,35 @@
+.nav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #06283D;
+    padding: 20px;
+
+    .logo {
+        margin: 0;
+        padding: 0;
+        width: 50vw;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        width: 50vw;
+        justify-content: space-evenly;
+    }
+    .nav-link {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 500;
+        color: #DFF6FF
+    }
+}
