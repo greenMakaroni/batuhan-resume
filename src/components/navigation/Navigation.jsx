@@ -10,7 +10,7 @@ export default function Navigation() {
 
   return (
     <>
-        { width < 620 ? <MobileNav /> : <Nav /> }
+        { width < 650 ? <MobileNav /> : <Nav /> }
     </>
   )
 }

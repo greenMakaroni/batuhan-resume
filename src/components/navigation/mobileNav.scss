@@ -1,7 +1,3 @@
-.unselectable {
-    user-select: none;
-}
-
 .div-hamburger {
     position: absolute;
     display: flex;
@@ -58,7 +54,7 @@
     width: 55%;
     height: 10%; 
     animation: hamburger-close-bottom ease 0.2s;
-    transform: rotate(135deg)
+    transform: rotate(135deg);
 }
 
 .middle-close {
@@ -76,11 +72,13 @@
     align-items: center;
     top: 0;
     right: 0;
+    padding-top: 50px;
     width: 100%;
     height: 100%;
     background: #256D85;
     animation: menuAppear-Mobile ease 0.3s;
     z-index: 2;
+    user-select: none;
 }
 
 .mobile-logo {
