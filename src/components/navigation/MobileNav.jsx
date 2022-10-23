@@ -1,19 +1,20 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import profilePic from "../../assets/pp.jpg"
 import "./mobileNav.scss";
 
 const MobileNav = () => {
-
+  const navigate = useNavigate()
+  const location = useLocation()
   const [open, setOpen] = useState(false);
 
   const NavigationMenu = () => {
     return (
       <nav className="navigation-menu">
-          <Link to="/" className="link" onClick={() => setOpen(!open)} > Home </Link>
-          <Link to="/about" className="link" onClick={() => setOpen(!open)} > About </Link>
-          <Link to="/portfolio" className="link" onClick={() => setOpen(!open)} > Portfolio </Link>
-          <Link to="/contact" className="link" onClick={() => setOpen(!open)} > Contact </Link>
+          <Link to="/" className={location.pathname == "/" ? "link active" : "link"} onClick={() => setOpen(!open)} > Home </Link>
+          <Link to="/about" className={location.pathname == "/about" ? "link active" : "link"} onClick={() => setOpen(!open)} > About </Link>
+          <Link to="/portfolio" className={location.pathname == "/portfolio" ? "link active" : "link"} onClick={() => setOpen(!open)} > Portfolio </Link>
+          <Link to="/contact" className={location.pathname == "/contact" ? "link active" : "link"} onClick={() => setOpen(!open)} > Contact </Link>
       </nav>
     )
   }
@@ -25,6 +26,16 @@ const MobileNav = () => {
             <div className={ open ? "middle-close" : "hamburger-middle" }></div>
             <div className={ open ? "bottom-close" : "hamburger-bottom" }></div>
         </div>
+
+        { open && 
+        <div className="mobile-logo">
+          <img src={profilePic} className="mobile-pp" alt="Profile pictrue" onClick={() => navigate("/")} />
+          <div className="mobile-logoText">
+            <p className="mobile-name" onClick={() => navigate("/")}> Batuhan Ozgur Basal </p>
+            <p className="mobile-title"> Master of Science in Robotics & Intelligent Systems </p>
+          </div>
+        </div>
+        }
 
         { open && <NavigationMenu /> }
     </>

@@ -8,12 +8,54 @@
     width: 100vw;
     height: 50px;
     background-color: #06283D;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
+    user-select: none;
 
     .logo {
-        margin: 0;
+        margin: 0 0 0 20px;
         padding: 0;
-        width: 50vw;
+        width: 40vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      
+        .logoText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10px;
+
+            .name {
+                margin: 0;
+                padding: 0;
+                font-size: 1rem;
+                color: #DFF6FF;
+                font-weight:500
+            }
+
+            .title {
+                margin: 0;
+                padding: 0;
+                font-size: 0.8rem;
+                font-weight: 200;
+                color: #DFF6FF;
+                font-style: italic;
+            }
+        }
+
+        .logoText:hover {
+            cursor: pointer;
+        }
+
+        .pp {
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+        }
+    }
+
+    .logo:hover {
+        cursor: pointer;
     }
 
     .links {
@@ -22,14 +64,21 @@
         margin: 0;
         padding: 0;
         width: 50vw;
-        justify-content: space-evenly;
+        justify-content: flex-end;
+
+        .nav-link {
+            margin: 0 30px 0 0;
+            padding: 0;
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: 500;
+            color: #DFF6FF
+        }
+        .active {
+            text-decoration: underline;
+            text-decoration-color: #DFF6FF;
+            text-decoration-thickness: 5px;
+        }
     }
-    .nav-link {
-        margin: 0;
-        padding: 0;
-        font-size: 1rem;
-        text-decoration: none;
-        font-weight: 500;
-        color: #DFF6FF
-    }
+
 }
