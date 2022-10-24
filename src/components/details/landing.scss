@@ -1,0 +1,43 @@
+.landing-banner {
+    height: 100vh;
+    width: 100vw;
+    background-color: #DFF6FF;
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+
+    .left {
+        width: 50vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .intro {
+            padding: 10px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .bannerCTO {
+            height: 50px;
+            width: 100px;
+            background-color: #06283D;
+            color: #DFF6FF;
+            border: none;
+        }
+
+        .bannerCTO:hover {
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        width: 50vw;
+        height: 100%;
+        background-color: black;
+    }
+}

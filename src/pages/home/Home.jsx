@@ -1,12 +1,12 @@
 import React from 'react'
-import PersonalDetails from '../../components/details/PersonalDetails'
+import Landing from '../../components/details/Landing'
 import "./home.scss"
 
 
 export default function Home() {
   return (
     <div className="banner"> 
-      <PersonalDetails />
+      <Landing />
     </div>
   )
 }
