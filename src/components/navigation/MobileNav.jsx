@@ -11,10 +11,10 @@ const MobileNav = () => {
   const NavigationMenu = () => {
     return (
       <nav className="navigation-menu">
-          <Link to="/" className={location.pathname == "/" ? "link active" : "link"} onClick={() => setOpen(!open)} > Home </Link>
-          <Link to="/about" className={location.pathname == "/about" ? "link active" : "link"} onClick={() => setOpen(!open)} > About </Link>
-          <Link to="/portfolio" className={location.pathname == "/portfolio" ? "link active" : "link"} onClick={() => setOpen(!open)} > Portfolio </Link>
-          <Link to="/contact" className={location.pathname == "/contact" ? "link active" : "link"} onClick={() => setOpen(!open)} > Contact </Link>
+          <Link to="/" className={location.pathname === "/" ? "link active" : "link"} onClick={() => setOpen(!open)} > Home </Link>
+          <Link to="/about" className={location.pathname === "/about" ? "link active" : "link"} onClick={() => setOpen(!open)} > About </Link>
+          <Link to="/portfolio" className={location.pathname === "/portfolio" ? "link active" : "link"} onClick={() => setOpen(!open)} > Portfolio </Link>
+          <Link to="/contact" className={location.pathname === "/contact" ? "link active" : "link"} onClick={() => setOpen(!open)} > Contact </Link>
       </nav>
     )
   }

@@ -20,7 +20,7 @@ export default function Landing() {
           errors for knowledge, constantly improving my skills and understanding.
         </p>
         <button className="bannerCTO" onClick={() => navigate("/portfolio")}>
-          Portfolio
+          MY PROJECTS
         </button>
       </div>
       { width > 650 && 

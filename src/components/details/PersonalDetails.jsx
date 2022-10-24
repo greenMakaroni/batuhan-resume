@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom"
 import "./personalDetails.scss"
 
 export default function PersonalDetails() {
+  const navigate = useNavigate();
+
   return (
     <div className="personal-details-section">
       <h1 className="personal-details-header">
@@ -16,8 +19,12 @@ export default function PersonalDetails() {
         class next month. In addition to this, of course, I make projects every day in order to improve myself and
         gain real life experience
       </p>
-      <button className="bannerCTO" style={{marginLeft: "20px", marginTop: "20px"}}>
-        About
+      <button 
+        className="bannerCTO" 
+        style={{marginLeft: "20px", marginTop: "20px"}}
+        onClick={() => navigate("/about")}
+        >
+        ABOUT ME
       </button>
     </div>
   )

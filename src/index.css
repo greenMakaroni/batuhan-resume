@@ -20,11 +20,11 @@ p {
 }
 
 .bannerCTO {
-  height: 50px;
-  width: 100px;
+  padding: 20px;
   background-color: #06283D;
   color: #DFF6FF;
   border: none;
+  font-family: 'Lato', sans-serif;
 }
 
 .bannerCTO:hover {
