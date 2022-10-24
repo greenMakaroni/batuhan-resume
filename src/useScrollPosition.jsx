@@ -6,7 +6,7 @@ const useScrollPosition = () => {
     useEffect(() => {
         const updatePosition = () => {
             setScrollPosition(prev => {
-                return {"prev": prev.current, "current": window.pageYOffset}
+                return { "prev": prev.current, "current": window.pageYOffset }
             })
         }
 

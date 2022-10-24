@@ -11,6 +11,7 @@
     background-color: #06283D;
     padding: 20px 0px 20px 0px;
     user-select: none;
+    transition-duration: 0.4s;
 
     .logo {
         margin: 0 0 0 20px;
@@ -81,5 +82,8 @@
             text-decoration-thickness: 5px;
         }
     }
+}
 
+.nav-hidden {
+    top: -100
 }

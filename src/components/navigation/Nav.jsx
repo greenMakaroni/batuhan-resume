@@ -8,10 +8,16 @@ export default function Nav() {
   const navigate = useNavigate();
   const scrollPosition = useScrollPosition();
   
-  console.log(scrollPosition)
+  const isScrollingDown = () => {
+    if (scrollPosition.prev < scrollPosition.current) {
+      return true
+    } else {
+      return false
+    }
+  }
   
   return (
-    <nav className="nav">
+    <nav className={isScrollingDown() ? "nav-hidden" : "nav"}>
       <div className="logo">
         <img src={profilePic} className="pp" alt="Profile pictrue" onClick={() => navigate("/")} />
         <div className="logoText">
