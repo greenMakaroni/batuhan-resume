@@ -1,0 +1,96 @@
+.landing-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+    margin: 0;
+    padding: 50px 0 0 0;
+
+    .left {
+        width: 50vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .landing-pic {
+            border-radius: 50%;
+            margin-bottom: -20px;
+            box-shadow: 0px 0px 20px 15px #888888;
+        }
+
+        .landing-pic:hover {
+            cursor: pointer;
+        }
+
+        .intro-header {
+            font-size: 75px;
+            font-weight: 900;
+            font-family: 'Tangerine', cursive;
+            margin-bottom: -5px;
+        }
+
+        .intro {
+            padding: 0 30px 30px 30px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-style: italic;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            color: #888888;
+        }
+    }
+
+    .left-mobile {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .landing-pic {
+            border-radius: 50%;
+            margin-bottom: -20px;
+            box-shadow: 0px 0px 20px 15px #888888;
+        }
+
+        .landing-pic:hover {
+            cursor: pointer;
+        }
+
+        .intro-header {
+            font-size: 75px;
+            font-weight: 900;
+            font-family: 'Tangerine', cursive;
+            margin-bottom: -5px;
+        }
+
+        .intro {
+            padding: 0 30px 30px 30px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-style: italic;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .bannerCTO {
+            height: 50px;
+            width: 100px;
+            background-color: #06283D;
+            color: #DFF6FF;
+            border: none;
+        }
+
+        .bannerCTO:hover {
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        width: 50vw;
+        height: 100%;
+        background-color: black;
+    }
+}

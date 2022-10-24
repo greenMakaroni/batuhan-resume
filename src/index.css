@@ -6,9 +6,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #DFF6FF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.bannerCTO {
+  height: 50px;
+  width: 100px;
+  background-color: #06283D;
+  color: #DFF6FF;
+  border: none;
+}
+
+.bannerCTO:hover {
+  cursor: pointer;
 }
