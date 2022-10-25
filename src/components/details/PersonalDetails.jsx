@@ -7,7 +7,7 @@ export default function PersonalDetails() {
   return (
     <div className="personal-details-section">
       <h1 className="personal-details-header">
-          PERSONAL DETAILS
+          Personal details
       </h1>
       <p className="details-paragraph">
         I take great pleasure in watching and playing team sports. I can attribute my competitiveness to this.

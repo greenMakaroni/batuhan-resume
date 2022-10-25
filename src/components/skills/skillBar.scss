@@ -1,0 +1,13 @@
+.skill-base {
+    padding: 4px;
+    width: 200px;
+    height: 20px;
+    background-color: #47B5FF;
+    border-radius: 8px;
+
+    .skill-lvl {
+        background-color: #256D85;
+        height: 100%;
+        border-radius: 5px;
+    }
+}
