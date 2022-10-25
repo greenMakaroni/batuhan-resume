@@ -1,8 +1,10 @@
 import Landing from '../../components/landing/Landing'
 import PersonalDetails from '../../components/details/PersonalDetails'
-import "./home.scss"
 import Interests from '../../components/interests/Interests'
+import Skills from '../../components/skills/Skills'
+import Footer from '../../components/footer/Footer'
 
+import "./home.scss"
 
 export default function Home() {
   return (
@@ -16,6 +18,10 @@ export default function Home() {
       <div className="interests">
         <Interests />
       </div>
+      <div className="skills">
+        <Skills />
+      </div>
+      <Footer />
     </>
   )
 }
