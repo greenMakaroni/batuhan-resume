@@ -9,6 +9,15 @@ export default function Footer() {
 
   return (
     <div className="footer" style={ width < 700 ? { flexDirection: "column" } : { flexDirection: "row"} }>
+        <div className="socials" style={width < 700 ? { width: "100%", alignItems: "center", justifyContent: "center" } : {width: "50%"}}>
+            <h3 className="h3-footer"> Follow me on </h3>
+            <a href="https://www.linkedin.com/in/batuhan-ozgur-basal-84154320b/">
+                <LinkedInIcon className="social-icon"/>
+            </a>
+            <a href="https://github.com/007Batuhan2">
+                <GitHubIcon className="social-icon"/>
+            </a>
+        </div>
         <div className="about-page" style={width < 700 ? { width: "100%", alignItems: "center", justifyContent: "center" } : {width: "50%"}}>
             <h3 className="h3-footer">
                 About this website
@@ -26,16 +35,6 @@ export default function Footer() {
                 <a className="footer-link" href="https://github.com/greenMakaroni"> Dawid Markieton</a>
                 </span>
             </p>
-        </div>
-
-        <div className="socials">
-            <h3 className="h3-footer"> Follow me on </h3>
-            <a href="https://www.linkedin.com/in/batuhan-ozgur-basal-84154320b/">
-                <LinkedInIcon className="social-icon"/>
-            </a>
-            <a href="https://github.com/007Batuhan2">
-                <GitHubIcon className="social-icon"/>
-            </a>
         </div>
     </div>
   )

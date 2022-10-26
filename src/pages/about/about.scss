@@ -1,0 +1,23 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100px;
+    .about-title {
+        padding: 75px 0 0 0;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+
+    .about-par {
+        padding: 50px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 200;
+        font-family: 'Lato', sans-serif;
+        color: #888888;
+    }
+}

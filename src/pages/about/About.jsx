@@ -1,7 +1,24 @@
-import React from 'react'
+import "./about.scss"
+import PDF from '../../assets/Batu_Basal_CV.pdf'
 
 export default function About() {
   return (
-    <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+    <div className="about-page">
+      <h1 className="about-title">
+        Batuhan Ozgur Basal
+      </h1>
+      <p className="about-par">
+        Data Scientist with 2 year of experience working with Python and a year
+        of experience in R, SQL, Spreadsheets (Excel, google), Machine
+        Learning and Deep Learning. Currently completed the Google data
+        analytics professional certificate and Machine Learning, Data Science
+        and Deep Learning with Python Specialization. In addition to these, I do
+        not need sponsorship to work as I will have work a graduate visa
+        until 2025
+      </p>
+      <button className="bannerCTO" onClick={() => window.open(PDF, "_blank")} style={{width: "150px", alignSelf: "center"}}>
+        My Resume
+      </button>
+    </div>
   )
 }
