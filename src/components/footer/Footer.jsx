@@ -2,7 +2,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import reactLogo from "../../assets/logo192.png"
 import useWindowDimensions from '../../useWindowDimensions';
-import "./footer.scss"
 
 export default function Footer() {
   const { width } = useWindowDimensions();

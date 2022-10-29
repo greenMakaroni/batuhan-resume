@@ -7,6 +7,9 @@ export default function About() {
       <h1 className="about-title">
         Batuhan Ozgur Basal
       </h1>
+      <button className="bannerCTO" onClick={() => window.open(PDF, "_blank")} style={{width: "150px", alignSelf: "center"}}>
+        My Resume
+      </button>
       <p className="about-par">
         Data Scientist with 2 year of experience working with Python and a year
         of experience in R, SQL, Spreadsheets (Excel, google), Machine
@@ -16,9 +19,6 @@ export default function About() {
         not need sponsorship to work as I will have work a graduate visa
         until 2025
       </p>
-      <button className="bannerCTO" onClick={() => window.open(PDF, "_blank")} style={{width: "150px", alignSelf: "center"}}>
-        My Resume
-      </button>
     </div>
   )
 }

@@ -10,15 +10,15 @@ export default function Skills() {
         <div className="skills-block">
             <div className="single-skill">
                 <h3 className="skill-title">
-                    Python (9/10)
+                    Python (8/10)
                 </h3>
-                <SkillBar skill={9} />
+                <SkillBar skill={8} />
             </div>
             <div className="single-skill">
                 <h3 className="skill-title">
-                    R (8/10)
+                    R (7/10)
                 </h3>
-                <SkillBar skill={8} />
+                <SkillBar skill={7} />
             </div>
             <div className="single-skill">
                 <h3 className="skill-title">
@@ -28,9 +28,9 @@ export default function Skills() {
             </div>
             <div className="single-skill">
                 <h3 className="skill-title">
-                    MS Office (9/10)
+                    MS Office (8/10)
                 </h3>
-                <SkillBar skill={9} />
+                <SkillBar skill={8} />
             </div>
             <div className="single-skill">
                 <h3 className="skill-title">
@@ -52,21 +52,21 @@ export default function Skills() {
             </div>
             <div className="single-skill">
                 <h3 className="skill-title">
-                    TensorFlow (10/10)
-                </h3>
-                <SkillBar skill={10} />
-            </div>
-            <div className="single-skill">
-                <h3 className="skill-title">
-                    Pandas (10/10)
-                </h3>
-                <SkillBar skill={10} />
-            </div>
-            <div className="single-skill">
-                <h3 className="skill-title">
-                    Keras (7/10)
+                    TensorFlow (7/10)
                 </h3>
                 <SkillBar skill={7} />
+            </div>
+            <div className="single-skill">
+                <h3 className="skill-title">
+                    Pandas (8/10)
+                </h3>
+                <SkillBar skill={8} />
+            </div>
+            <div className="single-skill">
+                <h3 className="skill-title">
+                    Keras (8/10)
+                </h3>
+                <SkillBar skill={8} />
             </div>
             <div className="single-skill">
                 <h3 className="skill-title">

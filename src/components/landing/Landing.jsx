@@ -13,7 +13,7 @@ export default function Landing() {
     <div className="landing-section"> 
       <div className={ width > 650 ? "left" : "left-mobile"}>
         <img src={profilePic} className="landing-pic" alt="Profile pictrue" onClick={() => navigate("/about")} />
-        <h1 className="intro-header">I'm Batu</h1>
+        <h1 className="intro-header">Call me Batu</h1>
         <p className="intro">
           I am a team player and I like competition, 
           with good attention to detail I disect 
@@ -26,7 +26,9 @@ export default function Landing() {
       { width > 650 && 
       <div className="right">
       
-      </div> }
+      </div>
+       }
+       
     </div>
   )
 }

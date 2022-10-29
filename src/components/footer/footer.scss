@@ -3,13 +3,30 @@
     flex-direction: row;
     width: 100vw;
     background-color: #06283D;
-    margin: 0;
+    bottom: 0;
+
+    .socials {
+        display: flex;
+        margin-top: 30px;
+        max-height: 300px;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        .social-icon {
+            color: #DFF6FF;
+            font-size: 50px;
+            margin-left: 15px;
+        }
+    }
 
     .about-page {
-        width: 50%;
-        max-height: 300px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 0;
+        max-height: 100%;
+
 
         .about-this-website-par {
             display: flex;
@@ -40,22 +57,6 @@
             width: 40px;
             margin-left: 20px;
             animation: logo-spin 3s infinite;
-        }
-    }
-
-    .socials {
-        display: flex;
-        margin-top: 30px;
-        max-height: 300px;
-        width: 50%;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-
-        .social-icon {
-            color: #DFF6FF;
-            font-size: 50px;
-            margin-left: 15px;
         }
     }
 }

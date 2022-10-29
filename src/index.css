@@ -20,6 +20,7 @@ p {
 }
 
 .bannerCTO {
+  margin-top: 20px;
   padding: 20px;
   background-color: #06283D;
   color: #DFF6FF;
@@ -30,3 +31,4 @@ p {
 .bannerCTO:hover {
   cursor: pointer;
 }
+
