@@ -14,6 +14,14 @@ code {
     monospace;
 }
 
+a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #06283D;
+  
+}
+
 p {
   margin: 0;
   padding: 0;

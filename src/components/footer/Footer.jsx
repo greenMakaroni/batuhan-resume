@@ -14,7 +14,7 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/batuhan-ozgur-basal-84154320b/">
                 <LinkedInIcon className="social-icon"/>
             </a>
-            <a href="https://github.com/007Batuhan2">
+            <a href="https://github.com/batuozgurbasal">
                 <GitHubIcon className="social-icon"/>
             </a>
         </div>

@@ -22,15 +22,17 @@ export default function Project({image, title, description, learned, link}) {
                 Things I've learned
             </h3>
             {
-                learned.map(par => 
-                    <ul>
-                        <li>
-                            <p className="desc-par">
-                                {par}
-                            </p>
-                        </li>
-                    </ul>
-                )
+               <ul>
+                    {learned.map((par, index) => 
+    
+                            <li key={index}>
+                                <p className="desc-par">
+                                    {par}
+                                </p>
+                            </li>
+                    
+                    )}
+                </ul>
             }
         </div>
         <button className="bannerCTO">
