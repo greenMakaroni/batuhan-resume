@@ -10,6 +10,8 @@ export default function Portfolio() {
           title="Network Intrusion Detection"
           description="Network intrusion detection system using Supervised classification algorithms and MLP"
           learned={[
+            "How to build neural network model.",
+            "How to tune the hyperparameters of network model",
             "Which supervised algorithm operates best with which data.", 
             "Importance of data processing.",
             "Working principle of multilayer perceptron."
@@ -22,7 +24,9 @@ export default function Portfolio() {
           description="Analysing sales data with python using pandas. "
           learned={[
             "Deep understanding of pandas library.",
-            "The ability to perform feature engineering."
+            "The ability to perform feature engineering.",
+            "Making data analysis more effective by using data visualizations.",
+            "Cleaning and prepare data for analysis."
           ]}
           link="https://github.com/batuozgurbasal/Sales-Analysis-with-Pandas-Library"
         />

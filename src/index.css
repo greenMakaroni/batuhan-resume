@@ -28,7 +28,14 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
+.CTO-anchor {
+  text-decoration: none;
+  color: white;
+}
+
 .bannerCTO:hover {
   cursor: pointer;
 }
+
+
 
