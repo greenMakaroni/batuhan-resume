@@ -3,6 +3,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import reactLogo from "../../assets/logo192.png"
 import useWindowDimensions from '../../useWindowDimensions';
 
+
 export default function Footer() {
   const { width } = useWindowDimensions();
 
