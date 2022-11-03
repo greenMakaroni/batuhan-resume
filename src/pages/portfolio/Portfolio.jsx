@@ -1,25 +1,29 @@
 import Project from "../../components/project/Project"
+import Navigation from "../../components/navigation/Navigation"
+
 import "./portfolio.scss"
 
 export default function Portfolio() {
   return (
-    <div className='portfolio-main'>
-      <h1 className="portfolio-header"> My Projects </h1>
-        <Project 
-          image="" 
+    <>
+      <Navigation />
+      <div className='portfolio-main'>
+        <h1 className="portfolio-header"> My Projects </h1>
+        <Project
+          image=""
           title="Network Intrusion Detection"
           description="Network intrusion detection system using Supervised classification algorithms and MLP"
           learned={[
             "How to build neural network model.",
             "How to tune the hyperparameters of network model",
-            "Which supervised algorithm operates best with which data.", 
+            "Which supervised algorithm operates best with which data.",
             "Importance of data processing.",
             "Working principle of multilayer perceptron."
           ]}
           link="https://github.com/batuozgurbasal/Network-Intrusion-Detection-System-"
-          />
-        <Project 
-          image="" 
+        />
+        <Project
+          image=""
           title="Pandas Sales Analysis"
           description="Analysing sales data with python using pandas. "
           learned={[
@@ -30,8 +34,8 @@ export default function Portfolio() {
           ]}
           link="https://github.com/batuozgurbasal/Sales-Analysis-with-Pandas-Library"
         />
-        <Project 
-          image="" 
+        <Project
+          image=""
           title="Click Through Rate Prediction (Master's Project)"
           description="Multi Attentional Neural Factorization Machines: A state of art model for click through rate prediction."
           learned={[
@@ -41,7 +45,9 @@ export default function Portfolio() {
             "How to implement cloud computing in order to train the model."
           ]}
           link="https://github.com/batuozgurbasal/Building-a-State-of-Art-Click-Through-Rate-Prediction-Model"
-         />
-    </div>
+        />
+      </div>
+    </>
+
   )
 }

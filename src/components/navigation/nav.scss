@@ -11,7 +11,8 @@
     background-color: #06283D;
     padding: 20px 0px 20px 0px;
     user-select: none;
-    transition-duration: 0.4s;
+    transition-duration: 0.1s;
+    z-index: 7;
 
     .logo {
         margin: 0 0 0 20px;
@@ -87,5 +88,5 @@
 }
 
 .nav-hidden {
-    top: -100
+    opacity: 0;
 }

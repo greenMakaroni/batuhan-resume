@@ -1,9 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense} from 'react'
 import { useNavigate } from "react-router-dom"
 import useWindowDimensions from '../../useWindowDimensions'
 import profilePic from "../../assets/pp.jpg"
+// threejs
+import { Canvas } from "@react-three/fiber";
+import { Html, useProgress, GizmoHelper, GizmoViewport, OrbitControls } from '@react-three/drei';
+import { Neural_network } from './Neural_network.jsx';
 
 import "./landing.scss"
+import { radToDeg } from 'three/src/math/MathUtils';
 const titles = ["Call me Batu", "I'm Batu", "Think about it", "Persistent Perfection"]
 
 export default function Landing() {
@@ -14,6 +19,13 @@ export default function Landing() {
   useEffect(() => {
     setTitle(titles[[Math.floor(Math.random()*titles.length)]])
   }, [])
+
+ 
+    function Loader() {
+      const { progress } = useProgress();
+    
+      return <Html center>{progress} % loaded </Html>
+    }
 
   return (
     <div className="landing-section"> 
@@ -31,7 +43,33 @@ export default function Landing() {
       </div>
       { width > 650 && 
       <div className="right">
-      
+            <Canvas camera={{ position: [0, 25, 0]}} >
+              <Suspense fallback={<Loader />}>
+                <color attach="background" args={ ["#DFF6FF"] } />
+                
+                <ambientLight intensity={ 0.17 } />
+
+                <pointLight
+                  intensity={0.5}       
+                  position={ [-25, 35, -12] } 
+                />
+
+                {/* <NeuralNetwork />     */}
+
+                {/* <GizmoHelper
+                  alignment="bottom-right" // widget alignment within scene
+                  margin={[80, 80]} // widget margins (X, Y)
+                  
+                >
+                  <GizmoViewport axisColors={['red', 'green', 'blue']} labelColor="black" />
+             
+                </GizmoHelper>
+                <gridHelper /> */}
+                
+                <Neural_network />
+                <OrbitControls enablePan={false} maxDistance={30.0} minDistance={15.0}/>
+              </ Suspense>
+          </Canvas>
       </div>
        }
        

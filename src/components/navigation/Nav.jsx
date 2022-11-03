@@ -1,23 +1,30 @@
-import { Link, useLocation, useNavigate } from "react-router-dom"
-import "./nav.scss"
-import profilePic from "../../assets/pp.jpg"
+import { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import profilePic from "../../assets/pp.jpg";
 import useScrollPosition from "../../useScrollPosition"; 
+import "./nav.scss";
 
 export default function Nav() {
   const location = useLocation();
   const navigate = useNavigate();
+
   const scrollPosition = useScrollPosition();
-  
-  const isScrollingDown = () => {
+  const [show, setShow] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     if (scrollPosition.prev < scrollPosition.current) {
-      return true
-    } else {
-      return false
-    }
-  }
-  
+      setShow(false);
+      } else {
+        setShow(true);
+      }
+  }, [scrollPosition.prev])
+
   return (
-    <nav className={isScrollingDown() ? "nav-hidden" : "nav"}>
+    <nav className={show ? "nav" : "nav-hidden"}>
       <div className="logo">
         <img src={profilePic} className="pp" alt="Profile pictrue" onClick={() => navigate("/")} />
         <div className="logoText">

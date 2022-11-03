@@ -6,7 +6,7 @@ import useWindowDimensions from '../../useWindowDimensions';
 
 export default function Navigation() {
 
-    const { height, width } = useWindowDimensions();
+    const {width, height} = useWindowDimensions();
 
   return (
     <>

@@ -1,18 +1,19 @@
 .contact-main {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-items: center;
-    margin: 25vh 0 0 15vw;
+    padding: 25vh 0 0 0;
     width: 100vw;
     
     .contact-method {
         padding: 30px;
+        width: 60%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-items: center;
-        transition: 0.2s;
+        transition: 0.1s;
     }
 
     .contact-method:hover {
@@ -42,5 +43,6 @@
         font-size: 1.5rem;
         text-align: center;
         text-decoration: none;
+        color: #06283D;
     }
 }

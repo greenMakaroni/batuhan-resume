@@ -1,70 +1,36 @@
 .footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100vw;
+    height: 10vh;
     background-color: #06283D;
-    bottom: 0;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: white;
 
     .socials {
+        padding: 20px;
+        width: 50vw;
         display: flex;
-        margin-top: 30px;
-        max-height: 300px;
-        width: 50%;
-        align-items: center;
-        justify-content: center;
         flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
 
         .social-icon {
-            color: #DFF6FF;
-            font-size: 50px;
-            margin-left: 15px;
-        }
-    }
-
-    .about-page {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0;
-        max-height: 100%;
-
-
-        .about-this-website-par {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            color: #888888
-        }
-
-        .formatting-pain {
-            color: #888888;
-            text-align: left;
-            .footer-link {
-                text-decoration: none;
-                font-weight: 800;
-                color: #888888
-            }
-        }
-
-        .about-this-website-par-bottom {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            color: #888888           
-        }
-
-        .react-logo {
-            height: 40px;
             width: 40px;
-            margin-left: 20px;
-            animation: logo-spin 3s infinite;
+            height: 40px;
+            padding: 0;
+            margin: 0;
+            color: white;
         }
     }
-}
 
-.h3-footer {
-    color: #DFF6FF;
-    margin-right: 10px;
-    padding: 0;
+    .ab {
+        width: 50vw;
+        height: 100%;
+    }
 }
 
 @keyframes logo-spin {

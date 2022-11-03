@@ -1,9 +1,12 @@
 import "./about.scss"
 import PDF from '../../assets/Batu_Basal_CV.pdf'
+import Navigation from "../../components/navigation/Navigation"
 
 export default function About() {
   return (
-    <div className="about-page">
+    <>
+     <Navigation />
+     <div className="about-page">
       <h1 className="about-title">
         Batuhan Ozgur Basal
       </h1>
@@ -43,5 +46,7 @@ export default function About() {
           View Certificate</a>
       </button>
     </div>
+    </>
+   
   )
 }
