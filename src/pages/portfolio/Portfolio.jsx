@@ -1,5 +1,6 @@
 import Project from "../../components/project/Project"
 import Navigation from "../../components/navigation/Navigation"
+import Footer from "../../components/footer/Footer"
 
 import "./portfolio.scss"
 
@@ -46,6 +47,7 @@ export default function Portfolio() {
           ]}
           link="https://github.com/batuozgurbasal/Building-a-State-of-Art-Click-Through-Rate-Prediction-Model"
         />
+        <Footer />
       </div>
     </>
 

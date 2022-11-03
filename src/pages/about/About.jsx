@@ -1,6 +1,7 @@
 import "./about.scss"
 import PDF from '../../assets/Batu_Basal_CV.pdf'
 import Navigation from "../../components/navigation/Navigation"
+import Footer from "../../components/footer/Footer"
 
 export default function About() {
   return (
@@ -45,7 +46,9 @@ export default function About() {
         <a className="CTO-anchor" href="https://www.udemy.com/certificate/UC-f5528353-e115-4c2a-8de4-6e33b48ae75d/">
           View Certificate</a>
       </button>
+      <Footer />
     </div>
+    
     </>
    
   )

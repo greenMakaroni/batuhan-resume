@@ -35,6 +35,10 @@ function App() {
         <Route exact path="/about" element={ <About /> } />
         <Route exact path="/portfolio" element={ <Portfolio /> } />
         <Route exact path="/contact" element={ <Contact /> } />
+        <Route exact path="/attribution" element={() => {
+          window.location.href = 'https://github.com/greenMakaroni';
+          return null
+        }} />
       </Routes>
     </BrowserRouter>
   );

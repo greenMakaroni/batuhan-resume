@@ -4,11 +4,10 @@ import useWindowDimensions from '../../useWindowDimensions'
 import profilePic from "../../assets/pp.jpg"
 // threejs
 import { Canvas } from "@react-three/fiber";
-import { Html, useProgress, GizmoHelper, GizmoViewport, OrbitControls } from '@react-three/drei';
+import { Html, useProgress, OrbitControls } from '@react-three/drei';
 import { Neural_network } from './Neural_network.jsx';
 
 import "./landing.scss"
-import { radToDeg } from 'three/src/math/MathUtils';
 const titles = ["Call me Batu", "I'm Batu", "Think about it", "Persistent Perfection"]
 
 export default function Landing() {
@@ -43,7 +42,7 @@ export default function Landing() {
       </div>
       { width > 650 && 
       <div className="right">
-            <Canvas camera={{ position: [0, 25, 0]}} >
+            <Canvas camera={{ position: [-5, 25, 5],}} >
               <Suspense fallback={<Loader />}>
                 <color attach="background" args={ ["#DFF6FF"] } />
                 
@@ -52,22 +51,9 @@ export default function Landing() {
                 <pointLight
                   intensity={0.5}       
                   position={ [-25, 35, -12] } 
-                />
-
-                {/* <NeuralNetwork />     */}
-
-                {/* <GizmoHelper
-                  alignment="bottom-right" // widget alignment within scene
-                  margin={[80, 80]} // widget margins (X, Y)
-                  
-                >
-                  <GizmoViewport axisColors={['red', 'green', 'blue']} labelColor="black" />
-             
-                </GizmoHelper>
-                <gridHelper /> */}
-                
+                />           
                 <Neural_network />
-                <OrbitControls enablePan={false} maxDistance={30.0} minDistance={15.0}/>
+                <OrbitControls enablePan={false} maxDistance={30.0} minDistance={30}/>
               </ Suspense>
           </Canvas>
       </div>
