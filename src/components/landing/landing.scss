@@ -19,10 +19,9 @@
         z-index: 2;
         
         .landing-pic {
-            border-radius: 50%;
-            margin-bottom: -20px;
-            box-shadow: 0px 0px 30px 20px #06283D;
-            border: 6px solid #dff6ff00
+            margin-bottom: -20px;        
+            box-shadow: 0px 0px 15px 5px #06283D;
+            width: 30%;
         }
 
         .landing-pic:hover {
@@ -54,10 +53,8 @@
         align-items: center;
         justify-content: center;
         .landing-pic {
-            border-radius: 50%;
-            margin-bottom: -20px;
-            box-shadow: 0px 0px 30px 20px #06283D;
-            border: 6px solid #DFF6FF
+            margin-bottom: -20px;        
+            box-shadow: 0px 0px 15px 5px #06283D;
         }
 
         .landing-pic:hover {

@@ -8,7 +8,8 @@ import { Html, useProgress, OrbitControls } from '@react-three/drei';
 import { Neural_network } from './Neural_network.jsx';
 
 import "./landing.scss"
-const titles = ["Call me Batu", "I'm Batu", "Think about it", "Persistent Perfection"]
+
+const titles = ["Call me Batu", "I'm Batu", 'Think about it', 'Persistent Perfection']
 
 export default function Landing() {
   const navigate = useNavigate()
@@ -23,7 +24,7 @@ export default function Landing() {
     function Loader() {
       const { progress } = useProgress();
     
-      return <Html center>{progress} % loaded </Html>
+      return <Html center>{progress}%</Html>
     }
 
   return (

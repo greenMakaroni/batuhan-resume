@@ -2,7 +2,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import Navigation from "../../components/navigation/Navigation"
-import Footer from "../../components/footer/Footer"
 
 import "./contact.scss"
 
@@ -30,7 +29,6 @@ export default function Contact() {
             <h3 className="h3-footer"> E-mail me </h3>
           </a>
         </div>
-        <Footer />
       </div>
     </>
   )
