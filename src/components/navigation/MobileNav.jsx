@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import profilePic from "../../assets/pp.jpg"
 import "./mobileNav.scss";
@@ -10,13 +10,19 @@ const MobileNav = () => {
 
   const NavigationMenu = () => {
     return (
-      <nav className="navigation-menu">
-          <Link to="/" className={location.pathname === "/" ? "link active" : "link"} onClick={() => setOpen(!open)} > Home </Link>
-          <Link to="/about" className={location.pathname === "/about" ? "link active" : "link"} onClick={() => setOpen(!open)} > About </Link>
-          <Link to="/portfolio" className={location.pathname === "/portfolio" ? "link active" : "link"} onClick={() => setOpen(!open)} > Portfolio </Link>
-          <Link to="/contact" className={location.pathname === "/contact" ? "link active" : "link"} onClick={() => setOpen(!open)} > Contact </Link>
+      
+   <nav className="navigation-menu" style={open ? { animation: "none" } : { animation: "menuAppear-Mobile ease 0.3s" }}>       
+          <Link to="/" style={open ? {animation: "none"} : {animation: "linkFadeIn ease 1s;"}} className={location.pathname === "/" ? "link active" : "link"} onClick={() => setOpen(!open)} > Home </Link>
+          <Link to="/about" style={open ? {animation: "none"} : {animation: "linkFadeIn ease 1s;"}} className={location.pathname === "/about" ? "link active" : "link"} onClick={() => setOpen(!open)} > About </Link>
+          <Link to="/portfolio" style={open ? {animation: "none"} : {animation: "linkFadeIn ease 1s;"}} className={location.pathname === "/portfolio" ? "link active" : "link"} onClick={() => setOpen(!open)} > Portfolio </Link>
+          <Link to="/contact" style={open ? {animation: "none"} : {animation: "linkFadeIn ease 1s;"}} className={location.pathname === "/contact" ? "link active" : "link"} onClick={() => setOpen(!open)} > Contact </Link>
       </nav>
     )
+  }
+
+  const paragraphClickHandle = () => {
+    setOpen(!open);
+    navigate("/")
   }
 
   return (
@@ -31,7 +37,7 @@ const MobileNav = () => {
         <div className="mobile-logo">
           <img src={profilePic} className="mobile-pp" alt="Profile pictrue" onClick={() => navigate("/")} />
           <div className="mobile-logoText">
-            <p className="mobile-name" onClick={() => navigate("/")}> Batuhan Ozgur Basal </p>
+            <p className="mobile-name" onClick={() => { paragraphClickHandle()}}> Batuhan Ozgur Basal </p>
             <p className="mobile-title"> Master of Science in Robotics & Intelligent Systems </p>
           </div>
         </div>
