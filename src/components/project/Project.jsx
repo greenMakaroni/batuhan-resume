@@ -36,7 +36,7 @@ export default function Project({image, title, description, learned, link}) {
             }
         </div>
         <button className="bannerCTO">
-            <a href={link} className="CTO-anchor"> GO TO PROJECT </a>
+            <a href={link} target="new" className="CTO-anchor"> GO TO PROJECT </a>
         </button>
     </div>
   )

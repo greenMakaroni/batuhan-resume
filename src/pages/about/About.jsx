@@ -2,8 +2,10 @@ import "./about.scss"
 import PDF from '../../assets/Batu_Basal_CV.pdf'
 import Navigation from "../../components/navigation/Navigation"
 import Footer from "../../components/footer/Footer"
+import { useNavigate } from "react-router-dom"
 
 export default function About() {
+  const navigate = useNavigate()
   return (
     <>
      <Navigation />
@@ -29,21 +31,21 @@ export default function About() {
         Google Data Analytics Professional Certificate
       </p>
       <button className="bannerCTO" style={{width: "150px", alignSelf: "center", marginBottom: "25vh"}}>
-        <a className="CTO-anchor" href="https://www.coursera.org/account/accomplishments/specialization/certificate/TPLQC9B3MJNS">
+        <a className="CTO-anchor" target="new" href="https://www.coursera.org/account/accomplishments/specialization/certificate/TPLQC9B3MJNS">
           View Certificate</a>
       </button>
       <p className="about-par" style={{marginTop: "5vh"}}>
         Machine Learning Specialization Certificate
       </p>
       <button className="bannerCTO" style={{width: "150px", alignSelf: "center", marginBottom: "25vh"}}>
-        <a className="CTO-anchor" href="https://www.coursera.org/account/accomplishments/specialization/certificate/WXRRKC3QBQJB">
+        <a className="CTO-anchor" target="new" href="https://www.coursera.org/account/accomplishments/specialization/certificate/WXRRKC3QBQJB">
           View Certificate</a>
       </button>
       <p className="about-par" style={{marginTop: "5vh"}}>
         Machine Learning, Data Science and Deep Learning with Python
       </p>
       <button className="bannerCTO" style={{width: "150px", alignSelf: "center", marginBottom: "25vh"}}>
-        <a className="CTO-anchor" href="https://www.udemy.com/certificate/UC-f5528353-e115-4c2a-8de4-6e33b48ae75d/">
+        <a className="CTO-anchor" target="new" href="https://www.udemy.com/certificate/UC-f5528353-e115-4c2a-8de4-6e33b48ae75d/">
           View Certificate</a>
       </button>
       <Footer />
