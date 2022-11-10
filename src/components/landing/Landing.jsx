@@ -24,9 +24,9 @@ export default function Landing() {
 
   return (
     <div className="landing-section"> 
-      <div className={width < 650 ? "left-mobile" : "left"} >
+      <div className={ width < 650 ? "left-mobile" : "left" }>
         <h3 className="intro-header" >
-          I'm Batu
+          BATUHAN
         </h3>
         <p className="intro">
           I disect errors for knowledge, constantly 
