@@ -6,68 +6,80 @@
     user-select: none;
     margin: 0;
     
-    .button-banner {
-        opacity: 0;
-        display: flex;
-        padding: 20px;
-        background-color: #06283D;
-        align-items: center;
-        justify-content: center;
-        color: #DFF6FF;
-        border: none;
-        font-family: 'Oswald', sans-serif;
-        bottom: 10vh;
-        right: 5vw;
-        animation: text-in-smooth 1s ease-in-out;
-        animation-delay: 3s;
-        animation-fill-mode: forwards;
-        cursor: pointer;
-        margin-bottom: 5vh;
-    }
-
-
-
     .left { 
         padding-top: 5vh;
         width: 50vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         background-color: #bcebff;
         z-index: 3;
-        
+
+        .title {
+            opacity: 0;
+            margin-left: 5vw;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 900;
+            animation: text-in-smooth 1s ease-in-out;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            text-shadow: 1px 1px 2px #06283D;
+        }
+
+        .button-banner {
+            margin-left: 5vw;
+            opacity: 0;
+            display: flex;
+            padding: 20px;
+            background-color: #06283D;
+            align-items: center;
+            justify-content: center;
+            color: #DFF6FF;
+            border: none;
+            font-family: 'Oswald', sans-serif;
+            bottom: 10vh;
+            right: 5vw;
+            animation: text-in-smooth 1s ease-in-out;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+            cursor: pointer;
+            margin-bottom: 5vh;
+        }
+
         .intro-header {
             opacity: 0;
-            font-size: 6rem;
+            font-size: 5rem;
             margin-top: 0;
-            margin-left: 3vw;
+            margin-left: 5vw;
             font-weight: 900;
-            align-self: center;
             font-family: 'Oswald', sans-serif;
             background-color: #06283d00;
             animation: text-in-smooth 1s ease-in-out;
             animation-delay: 1s;
             animation-fill-mode: forwards;
-            margin-bottom: 6vh;
+            margin-bottom: 1vh;
+            text-shadow: 2px 2px 4px #06283D;
         }
 
         .intro {
             display: flex;
             width: 40vw;
             opacity: 0;
-            padding: 0 30px 30px 30px;
             font-size: 1.5rem;
             font-weight: 500;
             font-style: italic;
-            text-align: center;
+            text-align: start;
+            margin-left: 5vw;
             font-family: 'Oswald', sans-serif;
             color: #5f5f5f;
             animation: text-in-smooth 1s ease-in-out;
             animation-delay: 2s;
             animation-fill-mode: forwards;
-            margin-bottom: 6vh;
+            margin-bottom: 15vh;         
+            padding-top: 8vh;   
         }
     }
 
@@ -81,6 +93,37 @@
         background-color: #bcebff00;
         z-index: 4;
 
+        .title {
+            opacity: 0;
+            margin-left: 5vw;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 900;
+            animation: text-in-smooth 1s ease-in-out;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            text-shadow: 1px 1px 2px #06283D;
+        }
+
+        .button-banner {
+            margin-left: 5vw;
+            opacity: 0;
+            display: flex;
+            padding: 20px;
+            background-color: #06283D;
+            align-items: center;
+            justify-content: center;
+            color: #DFF6FF;
+            border: none;
+            font-family: 'Oswald', sans-serif;
+            bottom: 10vh;
+            right: 5vw;
+            animation: text-in-smooth 1s ease-in-out;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+            cursor: pointer;
+            margin-bottom: 5vh;
+        }
         .intro-header {
             opacity: 0;
             margin: 5vh 0 0 -10vw;
@@ -91,12 +134,13 @@
             animation: text-in-smooth 1s ease-in-out;
             animation-delay: 1s;
             animation-fill-mode: forwards;
+            text-shadow: 2px 2px 4px #06283D;
         }
 
         .intro {
             opacity: 0;
-            margin-top: 55vh;
-            padding: 0 30px 30px 30px;
+            margin-top: 45vh;
+            margin-bottom: 5vh;
             font-size: 1.2rem;
             font-weight: 500;
             font-style: italic;

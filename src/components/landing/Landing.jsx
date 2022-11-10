@@ -28,11 +28,11 @@ export default function Landing() {
         <h3 className="intro-header" >
           BATUHAN
         </h3>
+        <p className="title"> DATA SCIENCE </p>
         <p className="intro">
           I disect errors for knowledge, constantly 
           improving my skills 
-          and understanding.
-          
+          and understanding.     
         </p>
         <button className="button-banner" onClick={() => navigate("/portfolio")}>
           MY PROJECTS
