@@ -9,7 +9,7 @@ export default function Portfolio() {
     <>
       <Navigation />
       <div className='portfolio-main'>
-        <h1 className="portfolio-header"> My Projects </h1>
+        <h1 className="portfolio-header"> MY BEST PROJECTS </h1>
         <Project
           image=""
           title="Network Intrusion Detection"
@@ -38,7 +38,7 @@ export default function Portfolio() {
         <Project
           image=""
           title="Click Through Rate Prediction (Master's Project)"
-          description="Multi Attentional Neural Factorization Machines: A state of art model for click through rate prediction."
+          description="Multi Attentional Neural Factorization Machines: A state of art model for click through rate prediction. This project was awarded best project of the cohort, Robotics & Intelligent Systems (2022)"
           learned={[
             "Deep understanding of how the AI algorithms work.",
             "The connection between advertisement and data.",
